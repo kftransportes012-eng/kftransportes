@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KF Transportes | Transfer Aeroporto, Eventos e Turismo em São Paulo</title>
+
+<meta name="description"
+content="Transporte executivo em São Paulo. Transfers para aeroportos, eventos como Barretos, Lollapalooza e viagens para Campos do Jordão. Conforto, segurança e pontualidade.">
+
+<meta name="keywords"
+content="transfer aeroporto SP, transporte executivo São Paulo, van para eventos, transporte Barretos, transporte Lollapalooza, viagem Campos do Jordão">
+
+<meta name="author" content="KF Transportes">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="assets/logo.png" alt="KF Transportes">
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="eventos.html">Eventos</a>
+<a href="frota.html">Frota</a>
+<a href="sobre.html">Sobre</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<div class="language-dropdown">
+
+  <button class="lang-btn">🌐 Idioma</button>
+
+  <div class="lang-menu">
+    <div onclick="setLanguage('pt')">🇧🇷 Português</div>
+    <div onclick="setLanguage('en')">🇺🇸 English</div>
+    <div onclick="setLanguage('es')">🇪🇸 Español</div>
+  </div>
+
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Transporte Executivo em Aeroportos, Eventos e Turismo</h1>
+
+<p>
+Transporte executivo com atendimento em todo o Brasil.
+Realizamos transfer para aeroportos, eventos como
+Barretos, Lollapalooza, Rock in Rio e viagens para Campos do Jordão.
+</p>
+
+<a class="botao"
+href="https://wa.me/5516981794538?text=Olá%20Kelvin!%20Estou%20entrando%20em%20contato%20através%20do%20seu%20site.%20Queria%20informações%20relacionadas%20a%20transporte.">
+Solicitar orçamento pelo Whatsapp
+</a>
+
+</div>
+
+</section>
+
+<section class="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="servicos-container">
+
+<a href="servicos.html#aeroporto" class="card">
+<h3>Transfers Aeroportos</h3>
+<p>Transfers executivos para aeroportos em todo o Brasil.</p>
+</a>
+
+<a href="servicos.html#turismo" class="card">
+<h3>Turismo</h3>
+<p>City tours e viagens para os principais destinos turísticos.</p>
+</a>
+
+<a href="servicos.html#eventos" class="card">
+<h3>Eventos</h3>
+<p>Transporte para shows, festivais e eventos corporativos.</p>
+</a>
+
+</div>
+
+</section>
+
+<section class="eventos">
+
+<h2>Eventos Atendidos</h2>
+
+<p class="eventos-sub">
+Transporte executivo para os maiores eventos do Brasil
+</p>
+
+<div class="eventos-wrapper">
+
+<button class="seta esquerda" onclick="scrollEventos(-1)">❮</button>
+
+<div class="eventos-slider" id="eventosSlider">
+
+<a href="eventos.html#f1" class="evento-card">
+<img src="assets/eventos/f1.jpg">
+<h3>F1 São Paulo</h3>
+</a>
+
+<a href="eventos.html#barretos" class="evento-card">
+<img src="assets/eventos/barretos.jpg">
+<h3>Festa do Peão de Barretos</h3>
+</a>
+
+<a href="eventos.html#rockinrio" class="evento-card">
+<img src="assets/eventos/rockinrio.jpg">
+<h3>Rock in Rio</h3>
+</a>
+
+<a href="eventos.html#americana" class="evento-card">
+<img src="assets/eventos/americana.jpg">
+<h3>Festa do Peão de Americana</h3>
+</a>
+
+<a href="eventos.html#lollapalooza" class="evento-card">
+<img src="assets/eventos/lollapalooza.jpg">
+<h3>Lollapalooza</h3>
+</a>
+
+<a href="eventos.html#jaguariuna" class="evento-card">
+<img src="assets/eventos/jaguariuna.jpg">
+<h3>Jaguariúna Rodeo Festival</h3>
+</a>
+
+<a href="eventos.html#tomorrowland" class="evento-card">
+<img src="assets/eventos/tomorrowland.jpg">
+<h3>Tomorrowland</h3>
+</a>
+
+<a href="eventos.html#campos" class="evento-card">
+<img src="assets/eventos/campos.jpg">
+<h3>Corpus Christi - Campos do Jordão</h3>
+</a>
+
+<a href="eventos.html#thetown" class="evento-card">
+<img src="assets/eventos/thetown.jpg">
+<h3>The Town</h3>
+</a>
+
+</div>
+
+<button class="seta direita" onclick="scrollEventos(1)">❯</button>
+
+</div>
+
+</section>
+
+<section class="frota">
+
+<h2>Nossa Frota</h2>
+
+<div class="frota-container">
+
+<a href="frota.html#sedan" class="frota-card">
+<img src="assets/frota/sedan.jpg">
+<h3>Sedan Executivo</h3>
+</a>
+
+<a href="frota.html#minivan" class="frota-card">
+<img src="assets/frota/minivan.jpg">
+<h3>Minivan Executiva</h3>
+</a>
+
+<a href="frota.html#suv" class="frota-card">
+<img src="assets/frota/suv.jpg">
+<h3>SUV Executiva</h3>
+</a>
+
+<a href="frota.html#van" class="frota-card">
+<img src="assets/frota/van.jpg">
+<h3>Van Executiva</h3>
+</a>
+
+</div>
+
+</section>
+
+<section class="empresa-numeros">
+
+<div class="empresa-container">
+
+<div class="empresa-imagem">
+<img src="assets/brasil-motorista.png" alt="KF Transportes Brasil">
+</div>
+
+<div class="empresa-info">
+
+<h2>Atendimento em Todo o Brasil</h2>
+
+<p class="empresa-descricao">
+A KF Transportes oferece mobilidade executiva para turismo, transfers e grandes eventos,
+atendendo clientes em diversos destinos do Brasil com conforto, segurança e pontualidade.
+</p>
+
+<div class="numeros">
+
+<div class="numero-item">
+<h3 class="contador" data-target="1500">0</h3>
+<p>Clientes atendidos</p>
+</div>
+
+<div class="numero-item">
+<h3 class="contador" data-target="50">0</h3>
+<p>Eventos realizados</p>
+</div>
+
+<div class="numero-item">
+<h3 class="contador" data-target="30">0</h3>
+<p>Cidades atendidas</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="avaliacoes">
+
+<h2>Avaliações no Google</h2>
+
+<p class="avaliacoes-sub">
+Veja o que nossos clientes dizem sobre a experiência com a KF Transportes
+</p>
+
+<div class="avaliacoes-resumo">
+
+<div class="nota-google">
+<span class="nota">⭐ 5.0</span>
+<p>Baseado em avaliações no Google</p>
+</div>
+
+<div class="google-widget">
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-b43769fc-8faf-465f-9bfd-16b9d4eb0c2a" data-elfsight-app-lazy></div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© KF Transportes - Sede em São Paulo - Atendimento em todo o Brasil</p>
+</footer>
+
+<!-- GOOGLE TRANSLATE -->
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'pt',
+includedLanguages: 'en,es,de,fr'
+}, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- SEUS SCRIPTS (INTACTOS) -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+const counters = document.querySelectorAll('.contador');
+const section = document.querySelector('.empresa-numeros');
+
+if (counters.length > 0 && section) {
+
+const iniciarContador = () => {
+counters.forEach(counter => {
+
+const target = +counter.getAttribute('data-target');
+let count = 0;
+
+const updateCount = () => {
+const increment = target / 200;
+
+if (count < target) {
+count += increment;
+counter.innerText = Math.ceil(count);
+setTimeout(updateCount, 10);
+} else {
+counter.innerText = "+" + target;
+}
+};
+
+updateCount();
+});
+};
+
+const observer = new IntersectionObserver(entries => {
+if (entries[0].isIntersecting) {
+iniciarContador();
+observer.disconnect();
+}
+});
+
+observer.observe(section);
+}
+
+const slider = document.getElementById("eventosSlider");
+
+if (slider) {
+
+window.scrollEventos = function (direcao) {
+slider.scrollBy({
+left: direcao * 300,
+behavior: "smooth"
+});
+}
+
+let autoScroll = setInterval(() => {
+slider.scrollBy({
+left: 300,
+behavior: "smooth"
+});
+}, 4000);
+
+slider.addEventListener("mouseenter", () => {
+clearInterval(autoScroll)
+})
+
+slider.addEventListener("mouseleave", () => {
+autoScroll = setInterval(() => {
+slider.scrollBy({
+left: 300,
+behavior: "smooth"
+});
+}, 3000)
+})
+
+}
+
+});
+</script>
+<script>
+function removeGoogleBar() {
+  const bar = document.querySelector('.goog-te-banner-frame');
+  if (bar) {
+    bar.style.display = 'none';
+  }
+  document.body.style.top = '0px';
+}
+
+// roda várias vezes pra garantir
+setInterval(removeGoogleBar, 500);
+</script>
+<!-- GOOGLE TRANSLATE -->
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'pt',
+    includedLanguages: 'en,es',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- SEUS SCRIPTS DE IDIOMA -->
+<script>
+// REMOVE BARRA DO GOOGLE
+function removeGoogleBar() {
+  const bar = document.querySelector('.goog-te-banner-frame');
+  if (bar) {
+    bar.style.display = 'none';
+  }
+  document.body.style.top = '0px';
+}
+setInterval(removeGoogleBar, 500);
+
+// SALVAR IDIOMA
+function setLanguage(lang) {
+  localStorage.setItem("siteLang", lang);
+  document.cookie = "googtrans=/pt/" + lang + ";path=/";
+  location.reload();
+}
+
+// APLICAR AUTOMATICAMENTE
+function applyLanguage() {
+  const lang = localStorage.getItem("siteLang");
+
+  if (lang) {
+    document.cookie = "googtrans=/pt/" + lang + ";path=/";
+
+    const select = document.querySelector(".goog-te-combo");
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+    }
+  }
+}
+
+// ESPERA CARREGAR
+window.addEventListener("load", function() {
+  setTimeout(applyLanguage, 1000);
+});
+</script>
+</script>
+
+<a href="https://wa.me/5516981794538?text=Olá%20Kelvin!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+class="whatsapp-fixo" target="_blank">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<path fill="white"
+d="M16 .5C7.5.5.5 7.5.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2c2.2 1.2 4.7 1.9 7.5 1.9 8.5 0 15.5-7 15.5-15.5S24.5.5 16 .5zm0 28c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C4.1 20.7 3.5 18.4 3.5 16 3.5 9.1 9.1 3.5 16 3.5S28.5 9.1 28.5 16 22.9 28.5 16 28.5zm6.9-8.5c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5-.5.3-.9.1c-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6s0-.6.2-.8c.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5-.1-.7-.1-.2-.9-2.2-1.2-3-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5s-1.3 1.2-1.3 3 1.3 3.6 1.5 3.9c.2.2 2.6 4 6.4 5.6.9.4 1.6.6 2.2.7.9.3 1.7.3 2.3.2.7-.1 2.4-1 2.7-2 .3-1 .3-1.9.2-2-.1-.1-.3-.2-.7-.4z" />
+</svg>
+
+</a>
+
+</body>
+</html>

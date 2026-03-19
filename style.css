@@ -375,56 +375,44 @@ margin-bottom:40px;
 line-height:1.6;
 }
 
-.numeros{
-display:flex;
-gap:80px;
-margin-top:30px;
-}
-
-.numero-item{
-text-align:center;
-}
-
-.numero-item h3{
-font-size:48px;
-color:#d4af37;
-margin-bottom:10px;
-}
-
-.numero-item p{
-font-weight:bold;
-color:#ddd;
-}
-/* ===== AJUSTE CONTADOR ===== */
-
-.contador {
+.numeros {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* QUEBRA no mobile */
-  gap: 20px;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* ESSENCIAL pro mobile */
 }
 
-.contador .item {
-  flex: 1 1 120px; /* se adapta automaticamente */
-  max-width: 150px;
+.numero-item {
   text-align: center;
+  flex: 1 1 150px; /* deixa responsivo */
+  max-width: 200px;
 }
 
-.contador .numero {
-  font-size: 28px;
+.numero-item h3 {
+  font-size: 48px;
+  color: #d4af37;
+  margin-bottom: 10px;
 }
 
+.numero-item p {
+  font-weight: bold;
+  color: #ddd;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .contador {
-    gap: 15px;
+
+  .numeros {
+    gap: 20px;
   }
 
-  .contador .numero {
-    font-size: 22px;
+  .numero-item {
+    flex: 1 1 45%; /* 2 por linha */
   }
 
-  .contador .item {
-    flex: 1 1 45%; /* 2 por linha no celular */
+  .numero-item h3 {
+    font-size: 28px;
   }
 }
 /* HERO EVENTOS */
